@@ -1,6 +1,6 @@
 {
   "name": "Hack Club",
-  "bio": "a worldwide community of 25k+ high school hackers 🚀 tinkering & making everyday",
+  "bio": "a worldwide community of 100k+ high school hackers - tinkering & making everyday",
   "url": "https://hackclub.com",
   "blog": true,
   "iconLinks": [
@@ -63,6 +63,16 @@
       "backgroundColor": "#1a3a5c",
       "decorativeImage": "/assets/blueprint_mascot.png",
       "decorativeImageClass": "pointer-events-none absolute -bottom-12 -right-12 z-20 h-[130px] w-auto rotate-12 object-contain transition-transform group-hover:scale-[1.02]"
+    },
+    {
+      "id": "campfire-flagship",
+      "title": "Campfire Flagship",
+      "titleImage": "/assets/campfire_flagship_logo.png",
+      "description": "Code with your favorite YouTubers at a Game Jam!",
+      "buttonText": "Join Now",
+      "buttonUrl": "https://flagship.campfire.hackclub.com",
+      "backgroundColor": "#000015",
+      "decorativeImage": "/assets/smore-smaller.png"
     },
     {
       "id": "hcb",

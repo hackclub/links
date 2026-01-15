@@ -70,7 +70,7 @@
       "titleImage": "/assets/campfire_flagship_logo.png",
       "description": "Code with your favorite YouTubers at a Game Jam!",
       "buttonText": "Join Now",
-      "buttonUrl": "https://flagship.campfire.hackclub.com",
+      "buttonUrl": "https://flagship.hackclub.com?utm_source=links",
       "backgroundColor": "#000015",
       "decorativeImage": "/assets/smore-smaller.png"
     },

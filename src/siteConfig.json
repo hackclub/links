@@ -54,6 +54,16 @@
       "decorativeImage": "/assets/flavortown_chef.avif"
     },
     {
+      "id": "sleepover",
+      "title": "Sleepover",
+      "titleImage": "/assets/sleepover_logo.png",
+      "description": "Build projects and fly out to the coziest slumber-party hackathon of your life.",
+      "buttonText": "Join the sleepover",
+      "buttonUrl": "https://sleepover.hackclub.com/?utm_source=links",
+      "backgroundColor": "#D9DAF8",
+      "decorativeImage": "bunny-sleeping.png"
+    },
+    {
       "id": "blueprint",
       "title": "Blueprint",
       "titleImage": "/assets/blueprint_logo.png",

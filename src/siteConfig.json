@@ -61,7 +61,7 @@
       "buttonText": "Join the sleepover",
       "buttonUrl": "https://sleepover.hackclub.com/?utm_source=links",
       "backgroundColor": "#D9DAF8",
-      "decorativeImage": "bunny-sleeping.png"
+      "decorativeImage": "/assets/bunny-sleeping.png"
     },
     {
       "id": "blueprint",

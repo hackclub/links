@@ -75,14 +75,14 @@
       "decorativeImageClass": "pointer-events-none absolute -bottom-12 -right-12 z-20 h-[130px] w-auto rotate-12 object-contain transition-transform group-hover:scale-[1.02]"
     },
     {
-      "id": "campfire-flagship",
-      "title": "Campfire Flagship",
-      "titleImage": "/assets/campfire_flagship_logo.png",
-      "description": "Code with your favorite YouTubers at a Game Jam!",
+      "id": "fallout",
+      "title": "Fallout",
+      "titleImage": "/assets/fallout_logo.png",
+      "description": "Build hardware projects, fly out to world's hardware capital!",
       "buttonText": "Join Now",
-      "buttonUrl": "https://flagship.hackclub.com?utm_source=links",
-      "backgroundColor": "#000015",
-      "decorativeImage": "/assets/smore-smaller.png"
+      "buttonUrl": "https://fallout.hackclub.com?utm_source=links",
+      "backgroundColor": "#38C9FF",
+      "decorativeImage": "assets/chineseheidi.gif"
     },
     {
       "id": "hcb",

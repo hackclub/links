@@ -44,10 +44,15 @@
     /* End Hack Club colors */
   }
 
+  html,
   body {
     background-color: light-dark(
       rgb(var(--light-mode-background)),
       rgb(var(--dark-mode-background))
     );
+
+    /* Prevent sideways scrolling on narrow screens. */
+    overflow-x: hidden;
+    overflow-x: clip;
   }
 }

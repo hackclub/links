@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Stone Breaker";
+  src: url("/assets/fonts/stone-breaker.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 @layer base {
   :root {
     color-scheme: light dark;
@@ -54,5 +62,13 @@
     /* Prevent sideways scrolling on narrow screens. */
     overflow-x: hidden;
     overflow-x: clip;
+  }
+}
+
+@layer utilities {
+  .font-beest-title {
+    font-family: "Stone Breaker", sans-serif;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
   }
 }

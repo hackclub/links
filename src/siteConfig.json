@@ -64,15 +64,15 @@
       "decorativeImage": "/assets/bunny-sleeping.png"
     },
     {
-      "id": "blueprint",
-      "title": "Blueprint",
-      "titleImage": "/assets/blueprint_logo.png",
-      "description": "Design a Hardware project and get up to $400 to make it real!",
+      "id": "macondo",
+      "title": "Macondo",
+      "titleImage": "/assets/macondo_logo.png",
+      "description": "Make software projects, get up to $1K for hardware projects, win prizes.",
       "buttonText": "Join Now",
-      "buttonUrl": "https://blueprint.hackclub.com/?utm_source=links",
-      "backgroundColor": "#1a3a5c",
-      "decorativeImage": "/assets/blueprint_mascot.png",
-      "decorativeImageClass": "pointer-events-none absolute -bottom-12 -right-12 z-20 h-[130px] w-auto rotate-12 object-contain transition-transform group-hover:scale-[1.02]"
+      "buttonUrl": "https://macondo.hackclub.com/?utm_source=links",
+      "backgroundColor": "#684D3A",
+      "decorativeImage": "/assets/macondo_mango.webp",
+      "decorativeImageClass": "pointer-events-none absolute -bottom-4 -right-4 z-20 h-24 w-auto rotate-12 object-contain transition-transform group-hover:scale-105"
     },
     {
       "id": "fallout",
@@ -92,6 +92,17 @@
       "buttonText": "Apply today →",
       "buttonUrl": "https://hackclub.com/fiscal-sponsorship/apply/",
       "backgroundColor": "#893648"
+    },
+    {
+      "id": "blueprint",
+      "title": "Blueprint",
+      "titleImage": "/assets/blueprint_logo.png",
+      "description": "Design a Hardware project and get up to $400 to make it real!",
+      "buttonText": "Join Now",
+      "buttonUrl": "https://blueprint.hackclub.com/?utm_source=links",
+      "backgroundColor": "#1a3a5c",
+      "decorativeImage": "/assets/blueprint_mascot.png",
+      "decorativeImageClass": "pointer-events-none absolute -bottom-12 -right-12 z-20 h-[130px] w-auto rotate-12 object-contain transition-transform group-hover:scale-[1.02]"
     }
   ]
 }

@@ -6,33 +6,51 @@ interface Props {
   buttonUrl: string;
   backgroundColor: string;
   titleImage?: string;
+  titleClassName?: string;
+  textColor?: string;
   decorativeImage?: string;
   decorativeImageClass?: string;
+  backgroundImage?: string;
+  backgroundImageOpacity?: number;
 }
 
-const { title, description, buttonText, buttonUrl, backgroundColor, titleImage, decorativeImage, decorativeImageClass } = Astro.props;
+const {
+  title,
+  description,
+  buttonText,
+  buttonUrl,
+  backgroundColor,
+  titleImage,
+  titleClassName,
+  textColor,
+  decorativeImage,
+  decorativeImageClass,
+  backgroundImage,
+  backgroundImageOpacity = 0.12,
+} = Astro.props;
 
 const defaultImageClass = "pointer-events-none absolute -bottom-4 -right-4 z-20 h-36 w-auto rotate-12 object-contain transition-transform group-hover:scale-105";
 const imageClass = decorativeImageClass || defaultImageClass;
+const resolvedTextColor = textColor || "#FFFFFF";
 ---
 
 <div class="group relative">
   <a
     href={buttonUrl}
-    class="relative block rounded-2xl p-4 transition-transform group-hover:scale-[1.02] sm:p-6"
-    style={`background-color: ${backgroundColor};`}
+    class:list={["feature-card-link relative block overflow-hidden rounded-2xl p-4 transition-transform group-hover:scale-[1.02] sm:p-6", backgroundImage && "has-tile"]}
+    style={`background-color: ${backgroundColor};${backgroundImage ? ` --tile-image: url('${backgroundImage}'); --tile-opacity: ${backgroundImageOpacity};` : ''}`}
   >
     <div class="relative z-10 flex flex-col gap-2 sm:gap-3">
       {titleImage ? (
         <img src={titleImage} alt={title} class="h-8 w-auto object-contain object-left sm:h-12" />
       ) : (
-        <h3 class="text-xl font-bold text-white sm:text-2xl">{title}</h3>
+        <h3 class={`text-xl font-bold sm:text-2xl ${titleClassName || ""}`} style={`color: ${resolvedTextColor};`}>{title}</h3>
       )}
       
-      <p class="text-sm text-white/90 sm:text-base">{description}</p>
+      <p class="text-sm sm:text-base" style={`color: ${resolvedTextColor};`}>{description}</p>
       
       <div class="mt-1 sm:mt-2">
-        <span class="inline-block rounded-full bg-white/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white transition-colors group-hover:bg-white/30 sm:px-6 sm:py-2 sm:text-sm">
+        <span class="inline-block rounded-full bg-white/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wide transition-colors group-hover:bg-white/30 sm:px-6 sm:py-2 sm:text-sm" style={`color: ${resolvedTextColor};`}>
           {buttonText}
         </span>
       </div>
@@ -47,3 +65,17 @@ const imageClass = decorativeImageClass || defaultImageClass;
     />
   )}
 </div>
+
+<style>
+  .feature-card-link.has-tile::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background-image: var(--tile-image);
+    background-repeat: repeat;
+    background-size: 512px 512px;
+    opacity: var(--tile-opacity, 0.12);
+    mix-blend-mode: overlay;
+  }
+</style>

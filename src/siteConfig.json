@@ -44,14 +44,18 @@
   ],
   "featureCards": [
     {
-      "id": "flavortown",
-      "title": "Flavortown",
-      "titleImage": "/assets/flavortown_logo.png",
-      "description": "Cook tasty personal projects, win free prizes!",
-      "buttonText": "Join Now",
-      "buttonUrl": "https://flavortown.hackclub.com/?ref=links",
-      "backgroundColor": "#8b5a4a",
-      "decorativeImage": "/assets/flavortown_chef.avif"
+      "id": "beest",
+      "title": "BEEST",
+      "titleClassName": "font-beest-title text-3xl leading-none sm:text-4xl",
+      "textColor": "#E0F5FF",
+      "description": "Build to earn a ticket to a week long hackathon in the Netherlands!",
+      "buttonText": "Start Building!",
+      "buttonUrl": "https://beest.hackclub.com/?utm_source=links",
+      "backgroundColor": "#635E4E",
+      "backgroundImage": "/assets/beest-tile.webp",
+      "backgroundImageOpacity": 0.18,
+      "decorativeImage": "/assets/beest_sticker_transparent.png",
+      "decorativeImageClass": "pointer-events-none absolute -bottom-10 -right-8 z-20 h-[120px] w-auto rotate-6 object-contain opacity-100 saturate-125 transition-transform group-hover:scale-[1.02]"
     },
     {
       "id": "sleepover",
@@ -92,17 +96,6 @@
       "buttonText": "Apply today →",
       "buttonUrl": "https://hackclub.com/fiscal-sponsorship/apply/",
       "backgroundColor": "#893648"
-    },
-    {
-      "id": "blueprint",
-      "title": "Blueprint",
-      "titleImage": "/assets/blueprint_logo.png",
-      "description": "Design a Hardware project and get up to $400 to make it real!",
-      "buttonText": "Join Now",
-      "buttonUrl": "https://blueprint.hackclub.com/?utm_source=links",
-      "backgroundColor": "#1a3a5c",
-      "decorativeImage": "/assets/blueprint_mascot.png",
-      "decorativeImageClass": "pointer-events-none absolute -bottom-12 -right-12 z-20 h-[130px] w-auto rotate-12 object-contain transition-transform group-hover:scale-[1.02]"
     }
   ]
 }

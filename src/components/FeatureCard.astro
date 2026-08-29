@@ -12,6 +12,7 @@ interface Props {
   decorativeImageClass?: string;
   backgroundImage?: string;
   backgroundImageOpacity?: number;
+  buttonBackgroundColor?: string;
 }
 
 const {
@@ -27,6 +28,7 @@ const {
   decorativeImageClass,
   backgroundImage,
   backgroundImageOpacity = 0.12,
+  buttonBackgroundColor = "rgba(255, 255, 255, 0.2)",
 } = Astro.props;
 
 const defaultImageClass = "pointer-events-none absolute -bottom-4 -right-4 z-20 h-36 w-auto rotate-12 object-contain transition-transform group-hover:scale-105";
@@ -50,7 +52,7 @@ const resolvedTextColor = textColor || "#FFFFFF";
       <p class="text-sm sm:text-base" style={`color: ${resolvedTextColor};`}>{description}</p>
       
       <div class="mt-1 sm:mt-2">
-        <span class="inline-block rounded-full bg-white/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wide transition-colors group-hover:bg-white/30 sm:px-6 sm:py-2 sm:text-sm" style={`color: ${resolvedTextColor};`}>
+        <span class="feature-card-button inline-block rounded-full px-4 py-1.5 text-xs font-bold uppercase tracking-wide transition-colors sm:px-6 sm:py-2 sm:text-sm" style={`color: ${resolvedTextColor}; background-color: ${buttonBackgroundColor};`}>
           {buttonText}
         </span>
       </div>
@@ -73,9 +75,13 @@ const resolvedTextColor = textColor || "#FFFFFF";
     inset: 0;
     pointer-events: none;
     background-image: var(--tile-image);
-    background-repeat: repeat;
-    background-size: 512px 512px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     opacity: var(--tile-opacity, 0.12);
-    mix-blend-mode: overlay;
+  }
+
+  .group:hover .feature-card-button {
+    filter: brightness(1.15);
   }
 </style>

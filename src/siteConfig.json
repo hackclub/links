@@ -61,7 +61,31 @@
       "buttonUrl": "https://stardance.hackclub.com/links",
       "backgroundColor": "#0f0911",
       "backgroundImage": "/assets/stardance_tile.png",
-      "backgroundImageOpacity": 0.18
+      "backgroundImageOpacity": 1
+    },
+    {
+      "id": "haven",
+      "title": "Haven",
+      "titleImage": "/assets/haven_logo.png",
+      "description": "A worldwide game jam happening in 200+ cities on November 14th & 15th. Find an event in your city!",
+      "buttonText": "Start Now!",
+      "buttonUrl": "https://haven.hackclub.com/",
+      "backgroundColor": "#b7c21f",
+      "backgroundImage": "/assets/haven_tile.png",
+      "backgroundImageOpacity": 1
+    },
+    {
+      "id": "snowglobe",
+      "title": "Snowglobe",
+      "titleImage": "/assets/snowglobe_logo.png",
+      "description": "Build projects, get prizes, and come to the largest girls-only high school hackathon in the world.",
+      "buttonText": "Start Now!",
+      "buttonUrl": "https://snowglobe.hackclub.com/",
+      "backgroundColor": "#f9f9f7",
+      "textColor": "#001eb3",
+      "buttonBackgroundColor": "rgba(0, 30, 179, 0.15)",
+      "backgroundImage": "/assets/snowglobe_tile.png",
+      "backgroundImageOpacity": 1
     },
     {
       "id": "hcb",

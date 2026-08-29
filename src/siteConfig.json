@@ -71,6 +71,7 @@
       "buttonText": "Start Now!",
       "buttonUrl": "https://haven.hackclub.com/",
       "backgroundColor": "#b7c21f",
+      "textColor": "#0f0911",
       "backgroundImage": "/assets/haven_tile.png",
       "backgroundImageOpacity": 1
     },

@@ -53,6 +53,17 @@
       "backgroundColor": "#893648"
     },
     {
+      "id": "stardance",
+      "title": "Stardance",
+      "titleImage": "/assets/stardance_logo.png",
+      "description": "The largest STEM event of the summer: make anything you want and earn free prizes. In partnership with NASA, AMD, and GitHub.",
+      "buttonText": "Start Now!",
+      "buttonUrl": "https://stardance.hackclub.com/links",
+      "backgroundColor": "#0f0911",
+      "backgroundImage": "/assets/stardance_tile.png",
+      "backgroundImageOpacity": 0.18
+    },
+    {
       "id": "hcb",
       "title": "HCB",
       "titleImage": "/assets/hcb.png",
